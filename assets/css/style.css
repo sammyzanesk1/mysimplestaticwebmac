@@ -1,0 +1,179 @@
+/* * {
+  border: 1px solid red;
+} */
+
+body {
+  color: #333333;
+  margin: 0;
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+hr {
+  display: none;
+}
+
+/* re useable */
+.constrain {
+  max-width: 960px;
+  margin: 0 auto; /** shares the left and right space of the content equally*/
+  padding: 10px 20px;
+}
+
+.button {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.button-orange {
+  background-color: #ef6900;
+  color: white;
+}
+.button-orange:hover {
+  background-color: #e68a43;
+}
+
+.button-white {
+  background-color: white;
+  color: #efa56d;
+}
+
+.button-white:hover {
+  background-color: #eee;
+}
+
+/* header */
+.header {
+  background-color: #333333;
+}
+
+.header .constrain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.4s;
+
+  /* border: 1px solid white; */
+}
+
+.header h1 {
+  padding: 0;
+  margin: 0;
+}
+.header a:hover {
+  color: white;
+}
+
+.header h1 span {
+  display: none; /**hides the logo name*/
+}
+.header h1 img {
+  width: 30px;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav ul a {
+  margin-left: 50px;
+}
+
+/* product */
+.product {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 100px 0;
+}
+
+.product:first-child {
+  padding-top: 20px;
+}
+.product:last-child {
+  border-bottom: none;
+}
+
+.product-reverse {
+  flex-direction: row-reverse;
+}
+
+.product-text,
+.product-image {
+  flex: 50% 0 0;
+}
+
+.product-text h1 {
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.product-text h2 {
+  font-size: 21px;
+}
+
+.product-text p {
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-nav {
+  margin-top: 30px;
+}
+
+.product-nav ul a {
+  margin-right: 20px;
+}
+.product-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+/* cookies banner */
+.cookies-banner {
+  background-color: #333333;
+  color: #ddd;
+  padding-bottom: 30px;
+  position: fixed; /* customizes the width of the element to default */
+  width: 100%;
+  bottom: 0;
+}
+
+.cookies-banner h1 {
+  margin-top: 0;
+}
+
+.cookies-banner .constrain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookies-banner h1 {
+  margin-top: 0;
+}
+
+.cookies-banner p {
+  margin-bottom: 0;
+}
